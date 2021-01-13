@@ -8,6 +8,7 @@ body {
   text-align: center;
   overflow: hidden;
   margin: 0;
+  background-color: #ffd166;
 }
 
 
@@ -24,14 +25,25 @@ small {
 }
 
 .fa-heart{
- color: #d90429;
+ color: #ff006e;
 }
 
 .picture {
-	height: 350px;
-	width: 650px;
-	background-image: url("porsche.png");
 	margin:auto;
 	cursor: pointer;
 	max-width: 100%;
+	position: relative;
+}
+
+.picture .fa-heart {
+	position:;
+	animation: grow 0.6s linear;
+	transform: translate(-50%, -50%) scale (0);
+}
+
+@keyframes grow {
+	to{
+			transform: translate(-50%, -50%) scale (10);
+			opacity: 0;
+	}
 }
